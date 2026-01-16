@@ -13,7 +13,7 @@ async def caption_image(file: UploadFile = File(...)):
         "http://localhost:11434/api/generate",
         json={
             "model": "llava",
-            "prompt": "Try to understand the question in the picture and give a solution.",
+            "prompt": "Describe this image in details.",
             "images": [image_base64],
             "stream": False
         }
